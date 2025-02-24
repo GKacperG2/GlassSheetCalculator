@@ -9,7 +9,7 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(55),
-        child: AppbarDashboard(),
+        child: AppbarDashboard(), 
       ),
       body: const Center(
         child: Text("Hello World"),

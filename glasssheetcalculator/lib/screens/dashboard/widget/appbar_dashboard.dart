@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:glasssheetcalculator/screens/dashboard/widget/dashboard_provider.dart';
+import 'package:glasssheetcalculator/screens/dashboard/dashboard_provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppbarDashboard extends ConsumerWidget {
