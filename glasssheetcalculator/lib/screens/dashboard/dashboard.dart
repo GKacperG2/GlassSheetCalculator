@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:glasssheetcalculator/screens/dashboard/widget/appbar_widget.dart';
 import 'package:glasssheetcalculator/screens/dashboard/widget/client_widget.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:glasssheetcalculator/screens/dashboard/widget/order_widget.dart';
+
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -19,6 +20,8 @@ class Dashboard extends StatelessWidget {
         children: [
           const SizedBox(height: 9),
           ClientWidget(),
+          const SizedBox(height: 9),
+           OrderWidget(),
         ],
       ),
     );
