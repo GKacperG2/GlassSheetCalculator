@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:glasssheetcalculator/screens/dashboard/dashboard_provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 
+// ignore: must_be_immutable
 class ClientWidget extends ConsumerWidget {
   ClientWidget({super.key});
 
