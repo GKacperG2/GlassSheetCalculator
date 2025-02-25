@@ -18,20 +18,26 @@ class AppbarDashboard extends ConsumerWidget {
       final nowScreen = ref.watch(appBarIDSceenProvider);
     return AppBar(
       backgroundColor: const Color(0xFF2563eb),
-      title: Wrap(
-        spacing: 16, // Odstępy między elementami
-        alignment: WrapAlignment.start,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: List.generate(appBarTitles.length, (index) {
-            return _buildTextButton(
-              appBarTitles[index],
-              isActive: nowScreen == index,
-              onTap: () {
-                ref.read(appBarIDSceenProvider.notifier).state = index;
-              },
-            );
-          }),
-
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+        Wrap(
+          spacing: 16, // Odstępy między elementami
+          alignment: WrapAlignment.start,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: List.generate(appBarTitles.length, (index) {
+              return _buildTextButton(
+                appBarTitles[index],
+                isActive: nowScreen == index,
+                onTap: () {
+                  ref.read(appBarIDSceenProvider.notifier).state = index;
+                },
+              );
+            }),
+        
+        ),
+        IconButton(onPressed: (){}, icon: Icon(Icons.settings, color: Colors.white,))
+        ]
       ),
     );
   }
