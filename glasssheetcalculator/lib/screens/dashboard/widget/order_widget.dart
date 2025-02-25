@@ -10,6 +10,7 @@ class OrderWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 32),
       shadowColor: Colors.black87.withOpacity(0.9),
       elevation: 2,
       shape: RoundedRectangleBorder(
